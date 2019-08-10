@@ -146,8 +146,8 @@
 						"attachment_tactical_pos" : [1.675, 0.625],
 						"attachment_tactical_end" : [1.87500, 0.625],
 
-						"muzzle_begin" : [1.6250, 1],
-						"muzzle_end" : [1.7500, 1], 
+						"muzzle_begin" : [1.6250, 1.5],
+						"muzzle_end" : [1.7500, 1.5], 
 						"transformationGroups" : ["gun", "base"]
 					}
 				},
@@ -156,7 +156,7 @@
 				"muzzleFlash" : {
 					"properties" : {
 						"transformationGroups" : ["base"],
-						"offset" : [1.25, -0.25],
+						"offset" : [1.875, -0.25],
 						"zLevel" : 20,
 						"fullbright" : true,
 						"centered" : false
