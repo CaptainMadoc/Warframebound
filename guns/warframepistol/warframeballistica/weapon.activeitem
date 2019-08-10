@@ -250,7 +250,10 @@
 			
 			"gun" : {
 				"interpolated" : false,
-				"transform" : {"position" : [-0.34375,-0.78125]}
+				"transform" : {
+					"position" : [-0.34375,-0.78125],
+					"rotationPoint" : [0.25, 1]
+				}
 			},
 			"lever" : {
 				"interpolated" : false,
