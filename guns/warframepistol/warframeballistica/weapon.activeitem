@@ -114,7 +114,7 @@
 				},
 				"limbs1" : {
 					"properties" : {
-						"zLevel" : 20,
+						"zLevel" : 21,
 						"centered" : false,
 						"image" : "limbs1.png",
 						"offset" : [0.0, 0.0],
@@ -264,11 +264,13 @@
 			},
 			"limbs1" : {
 				"interpolated" : false,
-				"transform" : {"position" : [1.75, 1.375]}
+				"transform" : {"position" : [1.75, 1.375]},
+				"rotationPoint" : [0.5, 0.125]
 			},
 			"limbs2" : {
 				"interpolated" : false,
-				"transform" : {"position" : [1.75, 0]}
+				"transform" : {"position" : [1.75, 0]},
+				"rotationPoint" : [0.5, 1.125]
 			},
 
 			//attachments
