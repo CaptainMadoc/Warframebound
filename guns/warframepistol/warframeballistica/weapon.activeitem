@@ -57,7 +57,7 @@
 		"standingInaccuracy" : 3,
 		"crouchInaccuracyMultiplier" : 0.25,
 		"muzzleFlash" : 1,
-		"rpm" : 1200
+		"rpm" : 4000
 	},
 
 	"gunSettings" : {
