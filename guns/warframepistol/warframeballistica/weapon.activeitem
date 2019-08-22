@@ -50,7 +50,7 @@
 		"maxMagazine" : 20,
 		"aimLookRatio" : 0.125,
 		"burst" : 4,
-		"burstDelay" : 0.8,
+		"burstCooldown" : 1,
 		"recoil" : 2,
 		"recoilRecovery" : 3,
 		"movingInaccuracy" : 8,
@@ -62,7 +62,7 @@
 
 	"gunSettings" : {
 		"fireSounds" : ["/guns/warframepistol/warframeballistica/Ballistica.ogg"],
-		"fireTypes" : ["auto"],
+		"fireTypes" : ["burst"],
 		"gunPart" : "gun",
 
 		"showCasings" : true,
