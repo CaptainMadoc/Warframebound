@@ -7,6 +7,7 @@
 	"inventoryIcon" : "warframepistol.png",
 	"description" : "test",
 	"shortdescription" : "Pistol Ammo",
+	"casingProjectile" : "gb762x39mm_casing",
 	"projectile" : "warframepistolproj",
 	"projectileConfig" : {"speed" : 100, "power" : 10}
 }
