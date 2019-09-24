@@ -1,7 +1,7 @@
 {
-	"itemName" : "warframeballistica",
+	"itemName" : "warframefluctus",
 
-	"shortdescription" : "Ballistica",
+	"shortdescription" : "Fluctus",
 	"description" : "description here",
 
 	"category" : "base",
@@ -10,7 +10,7 @@
 	"rarity" : "common",
 	"maxStack" : 1,
 	"price" : 0,
-	"twoHanded" : false,
+	"twoHanded" : true,
 
 	"scripts" : ["/gb/core/core.lua"],
 	"gunScript" : "/gb/systems/default.lua",
@@ -25,7 +25,7 @@
 		"draw" : "animations/draw.keyframes"
 	},
 
-	"compatibleAmmo" : "/ammoGroup/warframepistol.ammogroup",
+	"compatibleAmmo" : "/ammoGroup/warframeheavy.ammogroup",
 
 	"attachments" : {
 		"grip" : {
@@ -52,9 +52,9 @@
 	
 	"stats" : {
 		"damageMultiplier" : 2,
-		"maxMagazine" : 16,
+		"maxMagazine" : 40,
 		
-		"burst" : 4,
+		"burst" : 1,
 
 		"recoil" : 1,
 		"recoilRecovery" : 1,
@@ -67,14 +67,14 @@
 		"burstCooldown" : 0.4,
 
 		"muzzleFlash" : 1,
-		"rpm" : 1200
+		"rpm" : 175
 	},
 
 	"settings" : {
 		"drySound" : "dry",
 		"fireSound" : "fire",
 
-		"fireTypes" : ["burst"],
+		"fireTypes" : ["auto"],
 
 		"showCasings" : true,
 		"chamberEjection" : true,
@@ -106,7 +106,7 @@
 		"globalTagDefaults" : {},
 		"sounds" : {
 			"dry" : ["/sfx/gun/reload/machinepistol_reload_clip2.ogg"],
-			"fire" : ["Ballistica.ogg"],
+			"fire" : ["Fluctus.ogg"],
 			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
 			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"],
 			"boltback" : ["sounds/boltback.ogg"],
@@ -126,6 +126,50 @@
 					}
 				},
 
+				"gun1" : {
+					"properties" : {
+						"zLevel" : 100,
+						"centered" : false,
+						"image" : "<partImage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["gun1"],
+						"anchorPart" : "gun"
+					}
+				},
+
+				"gun2" : {
+					"properties" : {
+						"zLevel" : 1,
+						"centered" : false,
+						"image" : "<partImage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["gun2"],
+						"anchorPart" : "gun"
+					}
+				},
+
+				"barrel1" : {
+					"properties" : {
+						"zLevel" : 1,
+						"centered" : false,
+						"image" : "<partImage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["barrel1"],
+						"anchorPart" : "gun"
+					}
+				},
+
+				"barrel2" : {
+					"properties" : {
+						"zLevel" : 1,
+						"centered" : false,
+						"image" : "<partImage>",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["barrel2"],
+						"anchorPart" : "gun"
+					}
+				},
+
 				"magazine" : {
 					"properties" : {
 						"zLevel" : 47,
@@ -137,24 +181,46 @@
 					}
 				},
 
-				"limbs1" : {
+				"limb1" : {
 					"properties" : {
 						"zLevel" : 50,
 						"centered" : false,
-						"image" : "limbs1.png",
+						"image" : "limb1.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["limbs1"],
+						"transformationGroups" : ["limb1"],
 						"anchorPart" : "gun"
 					}
 				},
 
-				"limbs2" : {
+				"limb2" : {
 					"properties" : {
 						"zLevel" : 51,
 						"centered" : false,
-						"image" : "limbs2.png",
+						"image" : "limb2.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["limbs2"],
+						"transformationGroups" : ["limb2"],
+						"anchorPart" : "gun"
+					}
+				},
+
+				"lever1" : {
+					"properties" : {
+						"zLevel" : 51,
+						"centered" : false,
+						"image" : "limb2.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["lever1"],
+						"anchorPart" : "gun"
+					}
+				},
+
+				"lever2" : {
+					"properties" : {
+						"zLevel" : 51,
+						"centered" : false,
+						"image" : "limb2.png",
+						"offset" : [0.0, 0.0],
+						"transformationGroups" : ["lever2"],
 						"anchorPart" : "gun"
 					}
 				},
@@ -439,14 +505,56 @@
 			},
 			"lever" : {},
 			"mag" : {},
-			"limbs1" : {
+			"gun1" : {
 				"ignore":false,
 				"transform" : {
 					"position" : [1.75, 1.375],
 					"rotationPoint" : [0.5, 0.125]
 				}
 			},
-			"limbs2" : {
+			"gun2" : {
+				"ignore":false,
+				"transform" : {
+					"position" : [1.75, 0],
+					"rotationPoint" : [0.5, 1.125]
+				}
+			},
+			"barrel1" : {
+				"ignore":false,
+				"transform" : {
+					"position" : [1.75, 1.375],
+					"rotationPoint" : [0.5, 0.125]
+				}
+			},
+			"barrel2" : {
+				"ignore":false,
+				"transform" : {
+					"position" : [1.75, 0],
+					"rotationPoint" : [0.5, 1.125]
+				}
+			},
+			"lever1" : {
+				"ignore":false,
+				"transform" : {
+					"position" : [1.75, 1.375],
+					"rotationPoint" : [0.5, 0.125]
+				}
+			},
+			"lever2" : {
+				"ignore":false,
+				"transform" : {
+					"position" : [1.75, 0],
+					"rotationPoint" : [0.5, 1.125]
+				}
+			},
+			"limb1" : {
+				"ignore":false,
+				"transform" : {
+					"position" : [1.75, 1.375],
+					"rotationPoint" : [0.5, 0.125]
+				}
+			},
+			"limb2" : {
 				"ignore":false,
 				"transform" : {
 					"position" : [1.75, 0],
