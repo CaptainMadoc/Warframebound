@@ -123,12 +123,22 @@
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["gun", "base"]
+						},
+					"partStates" : {
+						"right" : {
+							"front" : {
+								"properties" : {"zLevel" : 99}
+							},
+							"back" : {
+								"properties" : {"zLevel" : 1}
+							}
+						}
 					}
-				},
+						},
 
 				"gun1" : {
 					"properties" : {
-						"zLevel" : 1000,
+						"zLevel" : 2,
 						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
@@ -139,7 +149,7 @@
 
 				"gun2" : {
 					"properties" : {
-						"zLevel" : 0,
+						"zLevel" : 2,
 						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
@@ -150,7 +160,7 @@
 
 				"barrel1" : {
 					"properties" : {
-						"zLevel" : 1,
+						"zLevel" : 2,
 						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
@@ -161,7 +171,7 @@
 
 				"barrel2" : {
 					"properties" : {
-						"zLevel" : 1,
+						"zLevel" : 2,
 						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
@@ -331,6 +341,18 @@
 			},
 
 			"stateTypes" : {
+				"left" : {"default" : "back",
+					"states" : {
+						"back" : {"frames" : 1, "mode" : "end", "cycle" : 0.1},
+						"front" : {"frames" : 1, "mode" : "end", "cycle" : 0.1}
+					}
+				},
+				"right" : {"default" : "front",
+					"states" : {
+						"back" : {"frames" : 1, "mode" : "end", "cycle" : 0.1},
+						"front" : {"frames" : 1, "mode" : "end", "cycle" : 0.1}
+					}
+				},
 				"firing" : {
 					"default" : "off",
 					"states" : {
@@ -500,7 +522,7 @@
 			"gun" : {
 				"transform" : {
 					"rotationPoint" : [0.25, 1],
-					"position" : [-2.15625,-2.59375]
+					"position" : [-2.21875,-3.28125]
 				}
 			},
 			"lever" : {},
