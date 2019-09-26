@@ -1,0 +1,13 @@
+{
+	"itemName" : "warframeheavyammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "warframeheavy.png",
+	"description" : "test",
+	"shortdescription" : "Heavy Ammo",
+	"casingProjectile" : "gb762x39mm_casing",
+	"projectile" : "warframeheavyproj",
+	"projectileConfig" : {"speed" : 100, "power" : 10}
+}

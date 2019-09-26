@@ -128,7 +128,7 @@
 
 				"gun1" : {
 					"properties" : {
-						"zLevel" : 100,
+						"zLevel" : 1000,
 						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
@@ -139,7 +139,7 @@
 
 				"gun2" : {
 					"properties" : {
-						"zLevel" : 1,
+						"zLevel" : 0,
 						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
@@ -500,7 +500,7 @@
 			"gun" : {
 				"transform" : {
 					"rotationPoint" : [0.25, 1],
-					"position" : [-0.34375,-0.78125]
+					"position" : [-2.15625,-2.59375]
 				}
 			},
 			"lever" : {},
