@@ -127,58 +127,14 @@
 					"partStates" : {
 						"right" : {
 							"front" : {
-								"properties" : {"zLevel" : 99}
+								"properties" : {"zLevel" : 50}
 							},
 							"back" : {
-								"properties" : {"zLevel" : 1}
+								"properties" : {"zLevel" : 50}
 							}
 						}
 					}
 						},
-
-				"gun1" : {
-					"properties" : {
-						"zLevel" : 2,
-						"centered" : false,
-						"image" : "<partImage>",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["gun1"],
-						"anchorPart" : "gun"
-					}
-				},
-
-				"gun2" : {
-					"properties" : {
-						"zLevel" : 2,
-						"centered" : false,
-						"image" : "<partImage>",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["gun2"],
-						"anchorPart" : "gun"
-					}
-				},
-
-				"barrel1" : {
-					"properties" : {
-						"zLevel" : 2,
-						"centered" : false,
-						"image" : "<partImage>",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["barrel1"],
-						"anchorPart" : "gun"
-					}
-				},
-
-				"barrel2" : {
-					"properties" : {
-						"zLevel" : 2,
-						"centered" : false,
-						"image" : "<partImage>",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["barrel2"],
-						"anchorPart" : "gun"
-					}
-				},
 
 				"magazine" : {
 					"properties" : {
@@ -193,7 +149,7 @@
 
 				"limb1" : {
 					"properties" : {
-						"zLevel" : 50,
+						"zLevel" : 52,
 						"centered" : false,
 						"image" : "limb1.png",
 						"offset" : [0.0, 0.0],
@@ -204,7 +160,7 @@
 
 				"limb2" : {
 					"properties" : {
-						"zLevel" : 51,
+						"zLevel" : 53,
 						"centered" : false,
 						"image" : "limb2.png",
 						"offset" : [0.0, 0.0],
@@ -215,22 +171,11 @@
 
 				"lever1" : {
 					"properties" : {
-						"zLevel" : 51,
+						"zLevel" : 56,
 						"centered" : false,
-						"image" : "limb2.png",
+						"image" : "lever1.png",
 						"offset" : [0.0, 0.0],
 						"transformationGroups" : ["lever1"],
-						"anchorPart" : "gun"
-					}
-				},
-
-				"lever2" : {
-					"properties" : {
-						"zLevel" : 51,
-						"centered" : false,
-						"image" : "limb2.png",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["lever2"],
 						"anchorPart" : "gun"
 					}
 				},
@@ -492,95 +437,81 @@
 			"L_offset" : {
 				"ignore":true,
 				"transform" : {
-					"position" : [1.15625, 0.15625]
+					"position" : [0.65625,0.09375]
+				}
+			},
+			"R_offset" : {
+				"ignore":true,
+				"transform" : {
+					"position" : [0,0.1875]
 				}
 			},
 			"R_arm1" : {
 				"ignore":true,
 				"transform" : {
-					"rotation" : 15
+					"rotation" : -66.4375
 				}
 			},
 			"R_arm2" : {
 				"ignore":true,
 				"transform" : {
-					"rotation" : -15
+					"rotation" : 27.375
+				}
+			},
+			"R_hand" : {
+				"ignore":true,
+				"transform" : {
+					"rotation" : 31.4375
 				}
 			},
 			"L_arm1" : {
 				"ignore":true,
 				"transform" : {
-					"rotation" : -5
+					"rotation" : -20
 				}
 			},
 			"L_arm2" : {
 				"ignore":true,
 				"transform" : {
-					"rotation" : 15
+					"rotation" : 51
+				}
+			},
+			"L_hand" : {
+				"ignore":true,
+				"transform" : {
+					"rotation" : -15
 				}
 			},
 			"gun" : {
 				"transform" : {
 					"rotationPoint" : [0.25, 1],
-					"position" : [-2.21875,-3.28125]
+					"position" : [-0.935,-2.3]
 				}
 			},
-			"lever" : {},
+			"lever" : {
+				"transform" : {
+					"position" : [0, 0]
+				}
+			},
 			"mag" : {},
-			"gun1" : {
-				"ignore":false,
-				"transform" : {
-					"position" : [1.75, 1.375],
-					"rotationPoint" : [0.5, 0.125]
-				}
-			},
-			"gun2" : {
-				"ignore":false,
-				"transform" : {
-					"position" : [1.75, 0],
-					"rotationPoint" : [0.5, 1.125]
-				}
-			},
-			"barrel1" : {
-				"ignore":false,
-				"transform" : {
-					"position" : [1.75, 1.375],
-					"rotationPoint" : [0.5, 0.125]
-				}
-			},
-			"barrel2" : {
-				"ignore":false,
-				"transform" : {
-					"position" : [1.75, 0],
-					"rotationPoint" : [0.5, 1.125]
-				}
-			},
 			"lever1" : {
 				"ignore":false,
 				"transform" : {
-					"position" : [1.75, 1.375],
-					"rotationPoint" : [0.5, 0.125]
-				}
-			},
-			"lever2" : {
-				"ignore":false,
-				"transform" : {
-					"position" : [1.75, 0],
-					"rotationPoint" : [0.5, 1.125]
+					"position" : [0, 0]
 				}
 			},
 			"limb1" : {
 				"ignore":false,
 				"transform" : {
-					"position" : [1.75, 1.375],
-					"rotationPoint" : [0.5, 0.125]
+					"position" : [3.375,2.625],
+					"rotationPoint" : [0.75, 0]
 				}
 			},
 			"limb2" : {
 				"ignore":false,
 				"transform" : {
-					"position" : [1.75, 0],
-					"rotationPoint" : [0.5, 1.125]
+					"position" : [3.375,-0.25],
+					"rotationPoint" : [0.75, 2.25]
 				}
 			},
 
