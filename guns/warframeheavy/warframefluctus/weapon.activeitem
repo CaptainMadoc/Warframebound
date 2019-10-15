@@ -127,10 +127,10 @@
 					"partStates" : {
 						"right" : {
 							"front" : {
-								"properties" : {"zLevel" : 50}
+								"properties" : {"zLevel" : 161}
 							},
 							"back" : {
-								"properties" : {"zLevel" : 50}
+								"properties" : {"zLevel" : 16}
 							}
 						}
 					}
