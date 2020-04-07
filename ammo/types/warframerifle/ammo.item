@@ -1,0 +1,12 @@
+{
+	"itemName" : "warframerifleammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "warframerifle.png",
+	"description" : "test",
+	"shortdescription" : "Rifle Ammo",
+	"projectile" : "warframerifleproj",
+	"projectileConfig" : {"speed" : 100, "power" : 1}
+}
