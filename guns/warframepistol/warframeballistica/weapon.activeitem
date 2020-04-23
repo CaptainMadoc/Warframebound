@@ -25,7 +25,7 @@
 		"draw" : "animations/draw.keyframes"
 	},
 
-	"compatibleAmmo" : "/ammoGroup/warframepistol.ammogroup",
+	"ammoType" : "warframepistol",
 
 	"attachments" : {
 		"grip" : {
@@ -50,42 +50,9 @@
 		}
 	},
 	
-	"stats" : {
-		"damageMultiplier" : 2,
-		"maxMagazine" : 16,
-		
-		"burst" : 4,
+	"stats" : "stats.config",
+	"settings" : "settings.config",
 
-		"recoil" : 1,
-		"recoilRecovery" : 1,
-		"aimLookRatio" : 0.125,
-
-		"movingInaccuracy" : 3,
-		"standingInaccuracy" : 1,
-		"crouchInaccuracyMultiplier" : 0.25,
-
-		"burstCooldown" : 0.4,
-
-		"muzzleFlash" : 1,
-		"rpm" : 1200
-	},
-
-	"settings" : {
-		"drySound" : "dry",
-		"fireSound" : "fire",
-
-		"fireTypes" : ["burst"],
-
-		"showCasings" : true,
-		"chamberEjection" : true,
-
-		"magazinePart" : "magazine" // we use this for mag attachments
-	},
-
-	"magazine" : {
-		"part" : "magazine",
-		"image": "mag.png"
-	},
 
 	"casing" : [
 		{"part": "casingPosition", "offset": [0,0]}
@@ -95,11 +62,22 @@
 		{"part": "firePosition", "offset": [0,-0.125]}
 	],
 
+	"muzzleFlash" : {
+		"animationStates" : {
+			"firing" : "on"
+		}
+	},
+
 	"animation" : "/gb/core/core.animation",
-	"animationParts" : {
+	"animationParts" : { // define your part sprite here
 		"magazine" : "/assetmissing.png",
-		"gun" : "gun.png",
-		"gunlever" : "lever.png"
+		"gun" : "image/gun.png",
+		"gunlever" : "image/lever.png"
+	},
+
+	"magazine" : {
+		"part" : "magazine",
+		"image": "image/mag.png"
 	},
 
 	"animationCustom" : {
@@ -183,6 +161,7 @@
 					}
 				},
 
+				//FX
 				"muzzleFlash" : {
 					"properties" : {
 						"offset" : [1.875, -0.25],
@@ -207,22 +186,20 @@
 					}
 				},
 				
-				//ATTACHMENT PARTS
+				//parts used by attachments
 				"attachment_muzzle" : {
 					"properties" : {
 						"zLevel" : 53,
-						"centered" : false,
-						"image" : "<partImage>",
+						"image" : "<partImage>", //important
 						"offset" : [4.125, 1],
 						"anchorPart" : "gun", 
-						"transformationGroups" : ["attachment_muzzle"]
+						"transformationGroups" : ["attachment_muzzle"] //important
 					}
 				},
 				
 				"attachment_tactical" : {
 					"properties" : {
 						"zLevel" : 53,
-						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [2.875, 1.125],
 						"anchorPart" : "gun", 
@@ -233,7 +210,6 @@
 				"attachment_grip" : {
 					"properties" : {
 						"zLevel" : 53,
-						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [2.875,0.875],
 						"anchorPart" : "gun", 
@@ -244,7 +220,6 @@
 				"attachment_sight" : {
 					"properties" : {
 						"zLevel" : 53,
-						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [1.5, 1.25],
 						"anchorPart" : "gun", 
@@ -252,14 +227,13 @@
 					}
 				},
 				
-				"attachment_magazine" : {
+				"attachment_magazine_762x39mm" : {
 					"properties" : {
 						"zLevel" : 48,
-						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [2.0, 1.0],
 						"anchorPart" : "magazine", 
-						"transformationGroups" : ["attachment_magazine"]
+						"transformationGroups" : ["attachment_magazine_762x39mm"]
 					}
 				}
 			},
@@ -269,21 +243,11 @@
 					"default" : "off",
 					"states" : {
 						"on" : {
-							"frames" : 3,
-							"mode" : "transition",
-							"transition" : "off",
-							"cycle" : 0.1,
-							"properties" : {
-								"lightsOn" : ["muzzleFlash"]
-							}
+							"frames" : 3,"mode" : "transition","transition" : "off","cycle" : 0.1,
+							"properties" : {"lightsOn" : ["muzzleFlash"],"particleEmittersOn" : ["spark"]}
 						},
 						"off" : {
-							"frames" : 1,
-							"mode" : "end",
-							"cycle" : 0.1,
-							"properties" : {
-								"lightsOff" : ["muzzleFlash"]
-							}
+							"properties" : {"lightsOff" : ["muzzleFlash"],"particleEmittersOff" : ["spark"]}
 						}
 					}
 				},
@@ -291,29 +255,15 @@
 					"default" : "off",
 					"states" : {
 						"on" : {
-							"frames" : 1,
-							"mode" : "end",
-							"cycle" : 0.5,
-							"properties" : {
-								"particleEmittersOn" : ["smoke"]
-							}
+							"properties" : {"particleEmittersOn" : ["smoke"]}
 						},
 						"timer" : {
-							"frames" : 1,
-							"mode" : "transition",
-							"cycle" : 0.5,
-							"transition" : "off",
-							"properties" : {
-								"particleEmittersOn" : ["smoke"]
-							}
+							"frames" : 1,"mode" : "transition","cycle" : 0.5,"transition" : "off",
+							"properties" : {"particleEmittersOn" : ["smoke"]}
 						},
 						"off" : {
-							"frames" : 1,
-							"mode" : "end",
-							"cycle" : 0.5,
-							"properties" : {
-								"particleEmittersOff" : ["smoke"]
-							}
+							"frames" : 1,"mode" : "end","cycle" : 0.5,
+							"properties" : {"particleEmittersOff" : ["smoke"]}
 						}
 					}
 				},
@@ -321,38 +271,21 @@
 					"default" : "off",
 					"states" : {
 						"on" : {
-							"frames" : 1,
-							"mode" : "end",
-							"cycle" : 0.5,
-							"properties" : {
-								"particleEmittersOn" : ["vapor"]
-							}
+							"properties" : {"particleEmittersOn" : ["vapor"]}
 						},
 						"timer" : {
 							"frames" : 1,
 							"mode" : "transition",
 							"cycle" : 1,
 							"transition" : "vape",
-							"properties" : {
-								"particleEmittersOff" : ["vapor"]
-							}
+							"properties" : {"particleEmittersOff" : ["vapor"]}
 						},
 						"vape" : {
-							"frames" : 1,
-							"mode" : "transition",
-							"cycle" : 1,
-							"transition" : "off",
-							"properties" : {
-								"particleEmittersOn" : ["vapor"]
-							}
+							"frames" : 1,"mode" : "transition","cycle" : 1,"transition" : "off",
+							"properties" : {"particleEmittersOn" : ["vapor"]}
 						},
 						"off" : {
-							"frames" : 1,
-							"mode" : "end",
-							"cycle" : 0.5,
-							"properties" : {
-								"particleEmittersOff" : ["vapor"]
-							}
+							"properties" : {"particleEmittersOff" : ["vapor"]}
 						}
 					}
 				}
@@ -388,7 +321,7 @@
 				]
 			},
 			"spark" : {
-				"emissionRate" : 32.0,
+				"emissionRate" : 64.0,
 				"zLevel" : 100,
 				"anchorPart" : "firePosition",
 				"particles" : [
@@ -458,7 +391,7 @@
 			"attachment_tactical" : {"ignore":true},
 			"attachment_grip" : {"ignore":true},
 			"attachment_sight" : {"ignore":true},
-			"attachment_magazine" : {"ignore":true}
+			"attachment_magazine_762x39mm" : {"ignore":true}
 		}
 	}
 
