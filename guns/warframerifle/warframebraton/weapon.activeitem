@@ -69,7 +69,7 @@
 	},
 
 	"animation" : "/gb/core/core.animation",
-	"animationParts" : { // define your part sprite here
+	"animationParts" : {
 		"magazine" : "/assetmissing.png",
 		"gun" : "image/gun.png",
 		"gunlever" : "image/lever.png"
