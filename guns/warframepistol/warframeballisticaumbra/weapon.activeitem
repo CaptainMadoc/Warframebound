@@ -1,8 +1,8 @@
 {
-	"itemName" : "warframeballistica",
+	"itemName" : "warframeballisticaumbra",
 
-	"shortdescription" : "Ballistica",
-	"description" : "description here",
+	"shortdescription" : "Ballistica Umbra",
+	"description" : "A mysterious weapon grafted from the skin of Ivara Umbra.",
 
 	"category" : "base",
 	"tooltipKind" : "base",
