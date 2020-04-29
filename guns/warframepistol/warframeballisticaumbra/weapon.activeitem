@@ -25,7 +25,7 @@
 		"draw" : "animations/draw.keyframes"
 	},
 
-	"ammoType" : "warframepistol",
+	"ammoType" : "warframeballisticaumbra",
 
 	"attachments" : {
 		"grip" : {
@@ -84,13 +84,13 @@
 		"globalTagDefaults" : {},
 		"sounds" : {
 			"dry" : ["/sfx/gun/reload/machinepistol_reload_clip2.ogg"],
-			"fire" : ["Ballistica.ogg"],
+			"fire" : ["BallisticaUmbraFire.ogg"],
 			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
 			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"],
-			"boltback" : ["sounds/BallisticaReload3.ogg"],
-			"boltforward" : ["sounds/BallisticaReload4.ogg"],
-			"magin" : ["sounds/BallisticaReload2.ogg"],
-			"magout" : ["sounds/BallisticaReload1.ogg"],
+			"boltback" : ["sounds/BallisticaUmbraReload4a.ogg"],
+			"boltforward" : ["sounds/BallisticaUmbraReload4a.ogg"],
+			"magin" : ["sounds/BallisticaUmbraReload3b.ogg"],
+			"magout" : ["sounds/BallisticaUmbraReload2b.ogg"],
 			"draw" : ["sounds/BallisticaDraw.ogg"]
 		},
 		"animatedParts" : {
@@ -116,24 +116,13 @@
 					}
 				},
 
-				"limbs1" : {
+				"gunfx1" : {
 					"properties" : {
 						"zLevel" : 50,
 						"centered" : false,
-						"image" : "limbs1.png",
+						"image" : "gunfx1.png",
 						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["limbs1"],
-						"anchorPart" : "gun"
-					}
-				},
-
-				"limbs2" : {
-					"properties" : {
-						"zLevel" : 51,
-						"centered" : false,
-						"image" : "limbs2.png",
-						"offset" : [0.0, 0.0],
-						"transformationGroups" : ["limbs2"],
+						"transformationGroups" : ["gunfx1"],
 						"anchorPart" : "gun"
 					}
 				},
@@ -384,11 +373,11 @@
 				}
 			},
 			"mag" : {},
-			"limbs1" : {
+			"gunfx1" : {
 				"ignore":false,
 				"transform" : {
-					"position" : [1.75, 1.375],
-					"rotationPoint" : [0.5, 0.125]
+					"position" : [0, 0]
+					"scale" : [0, 0]
 				}
 			},
 			"limbs2" : {

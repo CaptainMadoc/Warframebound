@@ -1,0 +1,12 @@
+{
+	"itemName" : "warframeballisticaumbraammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "warframeballisticaumbra.png",
+	"description" : "test",
+	"shortdescription" : "Ballistica Umbra Ammo",
+	"projectile" : "warframeballisticaumbraproj",
+	"projectileConfig" : {"speed" : 10, "power" : 10}
+}
