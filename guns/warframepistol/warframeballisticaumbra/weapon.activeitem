@@ -376,15 +376,8 @@
 			"gunfx1" : {
 				"ignore":false,
 				"transform" : {
-					"position" : [0, 0]
+					"position" : [0, 0],
 					"scale" : [0, 0]
-				}
-			},
-			"limbs2" : {
-				"ignore":false,
-				"transform" : {
-					"position" : [1.75, 0],
-					"rotationPoint" : [0.5, 1.125]
 				}
 			},
 
