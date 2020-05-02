@@ -84,7 +84,7 @@
 		"globalTagDefaults" : {},
 		"sounds" : {
 			"dry" : ["/sfx/gun/reload/machinepistol_reload_clip2.ogg"],
-			"fire" : ["BallisticaUmbraFire.ogg"],
+			"fire" : ["sounds/BallisticaUmbraFire.ogg"],
 			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
 			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"],
 			"boltback" : ["sounds/BallisticaUmbraReload4a.ogg"],
@@ -107,7 +107,7 @@
 
 				"magazine" : {
 					"properties" : {
-						"zLevel" : 47,
+						"zLevel" : 51,
 						"centered" : false,
 						"image" : "<partImage>",
 						"offset" : [0.0, 0.0],
@@ -140,7 +140,7 @@
 				
 				"firePosition" : {
 					"properties" : {
-						"offset":[1.7500, 1.5],
+						"offset":[1.7500, 1.75],
 						"anchorPart" : "gun"
 					}
 				},
@@ -154,7 +154,7 @@
 				//FX
 				"muzzleFlash" : {
 					"properties" : {
-						"offset" : [1.875, -0.25],
+						"offset" : [1.25, -1.125],
 						"zLevel" : 51,
 						"fullbright" : true,
 						"centered" : false,
@@ -363,16 +363,23 @@
 			"gun" : {
 				"transform" : {
 					"rotationPoint" : [0.25, 1],
-					"position" : [-0.34375,-0.78125]
+					"position" : [-0.65625,-1.03125]
 				}
 			},
 			"lever" : {
 				"transform" : {
-					"position" : [1,0.625],
-					"rotationPoint" : [0.125,0.375]
+					"position" : [0, 0],
+					"scale" : [1, 1],
+					"rotationPoint" : [0, 0]
 				}
 			},
-			"mag" : {},
+			"mag" : {
+				"transform" : {
+					"position" : [0, 0],
+					"scale" : [0, 0],
+					"rotationPoint" : [0, 0]
+				}
+			},
 			"gunfx1" : {
 				"ignore":false,
 				"transform" : {
