@@ -1,0 +1,12 @@
+{
+	"itemName" : "warframeshotgunammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "warframeshotgun.png",
+	"description" : "test",
+	"shortdescription" : "Shotgun Ammo",
+	"projectile" : "warframeshotgunproj",
+	"projectileConfig" : {"speed" : 100, "power" : 1}
+}

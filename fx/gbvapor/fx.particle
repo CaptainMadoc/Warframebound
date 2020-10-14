@@ -4,7 +4,7 @@
     "type" : "animated",
     "animation" : "/fx/gbvapor/image.animation",
     "looping" : false,
-    "size" : 0.1675,
+    "size" : 0.3,
     "color" : [255,255,255,32],
     "position" : [0, 0],
     "destructionAction" : "shrink",

@@ -1,8 +1,8 @@
 {
-	"itemName" : "warframebraton",
+	"itemName" : "warframeboar",
 
-	"shortdescription" : "Braton",
-	"description" : "Basic Tenno rifle.",
+	"shortdescription" : "Boar",
+	"description" : "Basic Tenno shotgun.",
 
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -25,7 +25,7 @@
 		"draw" : "animations/draw.keyframes"
 	},
 
-	"ammoType" : "warframerifle",
+	"ammoType" : "warframeshotgun",
 
 	"attachments" : {
 		"grip" : {
@@ -84,12 +84,12 @@
 		"globalTagDefaults" : {},
 		"sounds" : {
 			"dry" : ["/sfx/gun/reload/machinepistol_reload_clip2.ogg"],
-			"fire" : ["sounds/BratonFire.ogg"],
-			"boltback" : ["sounds/BratonCock1.ogg"],
-			"boltforward" : ["sounds/BratonCock2.ogg"],
-			"magin" : ["sounds/BratonReload.ogg"],
-			"magout" : ["sounds/BratonReload2.ogg"],
-			"draw" : ["sounds/BratonDraw.ogg"]
+			"fire" : ["sounds/BoarFire.ogg"],
+			"boltback" : ["sounds/BoarCock1.ogg"],
+			"boltforward" : ["sounds/BoarCock2.ogg"],
+			"magin" : ["sounds/BoarReload.ogg"],
+			"magout" : ["sounds/BoarReload2.ogg"],
+			"draw" : ["sounds/BoarDraw.ogg"]
 		},
 		"animatedParts" : {
 			"parts" : {
@@ -142,7 +142,7 @@
 				//FX
 				"muzzleFlash" : {
 					"properties" : {
-						"offset" : [0, -1],
+						"offset" : [0.5, -1],
 						"zLevel" : 51,
 						"fullbright" : true,
 						"centered" : false,
@@ -287,7 +287,7 @@
 				"zLevel" : 100,
 				"anchorPart" : "casingPosition",
 				"particles" : [
-					{ "particle" : "gbsmoke"}
+					{ "particle" : "gbsmoke", "offset" : [1.25, -0.125]}
 				]
 			},
 			"vapor" : {
@@ -295,7 +295,7 @@
 				"zLevel" : 100,
 				"anchorPart" : "firePosition",
 				"particles" : [
-					{ "particle" : "gbvapor"}//, "offset" : [4, 1]}
+					{ "particle" : "gbvapor", "offset" : [0.5, 0]}
 				]
 			},
 			"spark" : {
@@ -303,9 +303,9 @@
 				"zLevel" : 100,
 				"anchorPart" : "firePosition",
 				"particles" : [
-					{"particle" : "gbspark1"},
-					{"particle" : "gbspark1"},
-					{"particle" : "gbspark1"}
+					{"particle" : "gbspark1", "offset" : [0.5, 0]},
+					{"particle" : "gbspark1", "offset" : [0.5, 0]},
+					{"particle" : "gbspark1", "offset" : [0.5, 0]}
 				]
 			}
 		},

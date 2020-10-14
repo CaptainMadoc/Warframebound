@@ -1,0 +1,81 @@
+{
+  "projectileName" : "warframeshotgunproj",
+  "image" : "warframeshotgunproj.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "timeToLive" : 0.001,
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/fx/gbbulletimpact/action.config"
+    }
+  ],
+  "power" : 3.0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "warframeshotgunproj2",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 0.99,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 1.75
+    },
+    {
+      "action" : "projectile",
+      "type" : "warframeshotgunproj2",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 0.98,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 1.5
+    },
+    {
+      "action" : "projectile",
+      "type" : "warframeshotgunproj2",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 0.97,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 1.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "warframeshotgunproj2",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 0.96,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 1
+    },
+    {
+      "action" : "projectile",
+      "type" : "warframeshotgunproj2",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 0.95,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 0.75
+    },
+    {
+      "action" : "projectile",
+      "type" : "warframeshotgunproj2",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 0.94,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 0.5
+    },
+    {
+      "action" : "projectile",
+      "type" : "warframeshotgunproj2",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 0.93,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "warframeshotgunproj1",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 1,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 0
+    }
+  ]
+}
