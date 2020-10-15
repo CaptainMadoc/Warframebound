@@ -87,8 +87,8 @@
 			"fire" : ["sounds/BoarFire.ogg"],
 			"boltback" : ["sounds/BoarCock1.ogg"],
 			"boltforward" : ["sounds/BoarCock2.ogg"],
-			"magin" : ["sounds/BoarReload.ogg"],
-			"magout" : ["sounds/BoarReload2.ogg"],
+			"magin" : ["sounds/BoarReload2.ogg"],
+			"magout" : ["sounds/BoarReload1.ogg"],
 			"draw" : ["sounds/BoarDraw.ogg"]
 		},
 		"animatedParts" : {
@@ -295,7 +295,7 @@
 				"zLevel" : 100,
 				"anchorPart" : "firePosition",
 				"particles" : [
-					{ "particle" : "gbvapor", "offset" : [0.5, 0]}
+					{ "particle" : "warframeboarvapor", "offset" : [0.5, 0]}
 				]
 			},
 			"spark" : {
