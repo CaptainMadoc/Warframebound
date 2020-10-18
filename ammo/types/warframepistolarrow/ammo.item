@@ -1,0 +1,12 @@
+{
+	"itemName" : "warframepistolarrowammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "warframepistolarrow.png",
+	"description" : "test",
+	"shortdescription" : "Pistol Arrow Ammo",
+	"projectile" : "warframepistolarrowproj",
+	"projectileConfig" : {"speed" : 65, "power" : 10}
+}
