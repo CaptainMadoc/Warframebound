@@ -151,7 +151,7 @@
 				
 				"firePosition" : {
 					"properties" : {
-						"offset":[1.7500, 1.5],
+						"offset":[1.7500, 1.375],
 						"anchorPart" : "gun"
 					}
 				},
@@ -326,9 +326,9 @@
 				"zLevel" : 100,
 				"anchorPart" : "firePosition",
 				"particles" : [
-					{"particle" : "gbspark1"},
-					{"particle" : "gbspark1"},
-					{"particle" : "gbspark1"}
+					{"particle" : "gbspark1", "offset" : [0.375, -0.125]},
+					{"particle" : "gbspark1", "offset" : [0.375, -0.125]},
+					{"particle" : "gbspark1", "offset" : [0.375, -0.125]}
 				]
 			}
 		},
@@ -339,6 +339,12 @@
 				"ignore":true,
 				"transform" : {
 					"position" : [1.15625, 0.15625]
+				}
+			},
+			"R_offset" : {
+				"ignore":true,
+				"transform" : {
+					"position" : [-2.8125,-2.6875]
 				}
 			},
 			"R_arm1" : {
@@ -374,7 +380,7 @@
 			"gun" : {
 				"transform" : {
 					"rotationPoint" : [0.25, 1],
-					"position" : [-0.34375,-0.78125]
+					"position" : [-0.59375,-0.78125]
 				}
 			},
 			"lever" : {
