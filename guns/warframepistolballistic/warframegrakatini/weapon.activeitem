@@ -1,8 +1,8 @@
 {
-	"itemName" : "warframeballistica",
+	"itemName" : "warframegrakatini",
 
-	"shortdescription" : "Ballistica",
-	"description" : "description here",
+	"shortdescription" : "Grakata Mini",
+	"description" : "Clem? Grakata?",
 
 	"category" : "base",
 	"tooltipKind" : "base",
@@ -25,7 +25,7 @@
 		"draw" : "animations/draw.keyframes"
 	},
 
-	"ammoType" : "warframepistolarrow",
+	"ammoType" : "warframepistolballistic",
 
 	"attachments" : {
 		"grip" : {
@@ -84,14 +84,14 @@
 		"globalTagDefaults" : {},
 		"sounds" : {
 			"dry" : ["/sfx/gun/reload/machinepistol_reload_clip2.ogg"],
-			"fire" : ["sounds/BallisticaFire.ogg"],
+			"fire" : ["sounds/GrakatiniFire.ogg"],
 			"cock" : ["/sfx/gun/reload/shotgun_reload_clip1.ogg"],
 			"cock2" : ["/sfx/gun/reload/shotgun_reload_clip2.ogg"],
-			"boltback" : ["sounds/BallisticaReload3.ogg"],
-			"boltforward" : ["sounds/BallisticaReload4.ogg"],
-			"magin" : ["sounds/BallisticaReload2.ogg"],
-			"magout" : ["sounds/BallisticaReload1.ogg"],
-			"draw" : ["sounds/BallisticaDraw.ogg"]
+			"boltback" : ["sounds/GrakatiniReload3.ogg"],
+			"boltforward" : ["sounds/GrakatiniReload4.ogg"],
+			"magin" : ["sounds/GrakatiniReload2.ogg"],
+			"magout" : ["sounds/GrakatiniReload1.ogg"],
+			"draw" : ["sounds/GrakatiniDraw.ogg"]
 		},
 		"animatedParts" : {
 			"parts" : {
