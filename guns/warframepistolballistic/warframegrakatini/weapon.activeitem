@@ -165,7 +165,7 @@
 				//FX
 				"muzzleFlash" : {
 					"properties" : {
-						"offset" : [1.875, -0.25],
+						"offset" : [0.375, -1.125],
 						"zLevel" : 51,
 						"fullbright" : true,
 						"centered" : false,
