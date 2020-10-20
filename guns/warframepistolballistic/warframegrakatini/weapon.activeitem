@@ -379,7 +379,7 @@
 			},
 			"gun" : {
 				"transform" : {
-					"rotationPoint" : [0.25, 1],
+					"rotationPoint" : [0.5, 1],
 					"position" : [-0.59375,-0.78125]
 				}
 			},
