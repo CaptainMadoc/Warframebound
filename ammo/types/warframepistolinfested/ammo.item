@@ -1,0 +1,12 @@
+{
+	"itemName" : "warframepistolinfestedammo",
+	"price" : 5,
+	"rarity" : "common",
+	"maxStack" : 25000,
+	"category" : "craftingMaterial",
+	"inventoryIcon" : "warframepistolinfested.png",
+	"description" : "test",
+	"shortdescription" : "Pistol Infested Ammo",
+	"projectile" : "warframepistolinfestedproj",
+	"projectileConfig" : {"speed" : 100, "power" : 10}
+}
