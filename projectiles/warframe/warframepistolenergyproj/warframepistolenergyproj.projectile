@@ -3,6 +3,8 @@
   "image" : "warframepistolenergyproj.png",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
+  "lightColor" : [54, 63, 63],
+  "fullbright" : true,
   "pointLight" : false,
   "actionOnHit" : [
     {
